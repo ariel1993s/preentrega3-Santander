@@ -33,8 +33,8 @@
   padding-top: 50px;
   color: black;
   background: linear-gradient(to right, white, rgb(121, 121, 121), black);
-  background-size: 100% 80%; /* Doble del ancho para crear espacio para la animación */
-  animation: gradientAnimation 3s linear infinite; /* Cambia la duración y el temporizador según sea necesario */
+  background-size: 100% 80%; 
+  animation: gradientAnimation 3s linear infinite; 
 }
 
 @keyframes gradientAnimation {
@@ -131,14 +131,14 @@ p {
     min-height: 50vh;
   }
   .card2 {
-    width: 100%; /* Ajustar el ancho de las tarjetas */
+    width: 100%; 
   }
   .logo,
   .log {
-    padding-top: 20px; /* Espaciado superior para el logo */
+    padding-top: 20px; 
   }
   .barra {
-    padding-top: 30px; /* Espaciado superior para la barra de navegación */
+    padding-top: 30px; 
   }
 }
 
