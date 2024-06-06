@@ -1,0 +1,132 @@
+$colorPrincipal: white ;
+$colorSecundario: black;
+
+*{padding: 0 auto;
+    margin: 0 auto;}
+    
+    .arriba{
+        height:10vh;
+        width: 100vw;
+        background-color: aqua;  
+        position: sticky;
+    }
+    
+    .medio{
+        
+        height: 85vh;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+    }
+    
+    
+    .mediopromo{
+        
+      height: 85vh;
+      background-color: $colorPrincipal;
+      width: 100vw;
+    }
+    .abajo{ height: 5vh;
+      width: 100vw;
+    background-color: brown;
+    }
+    
+    
+    
+    .barra {padding-top: 50px;
+            color: $colorSecundario;
+            background: linear-gradient(to right,$colorPrincipal,rgb(121, 121, 121), $colorSecundario);
+            background-size: 100% 80%; /* Doble del ancho para crear espacio para la animación */
+            animation: gradientAnimation 3s linear infinite; /* Cambia la duración y el temporizador según sea necesario */
+          }
+          @keyframes gradientAnimation {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+                color: $colorPrincipal;
+              background-position: 100% 50%;
+            }
+    
+            100%{color: $colorSecundario; 
+                background-position:50% 0%}
+          }
+    
+    .logo{
+       color: $colorPrincipal;
+      background-color: $colorSecundario;
+      font-size: xx-large;
+      text-align: center;}
+    
+      .log{ 
+          margin: auto;
+          animation: ryb 5s infinite;
+        padding-top: 50px;
+          }
+    
+          @keyframes ryb {
+        50% {transform: rotate(180deg);}
+          }
+    h1{text-align: center;
+    color: $colorSecundario;}
+    
+    .card .card2{
+      padding-bottom: 150px;
+      transition: width 2s;
+    }
+    
+    .card:hover {
+      width: 440px;
+    }
+    .card2:hover {
+      width: 300px;
+    }
+    
+    ul { padding-top: 0px;
+      list-style-type: none;
+      margin: 0;
+    
+      
+    }
+    
+    li{display: inline;
+     
+    }
+    
+    
+    .lat{background-color: rgb(196, 196, 196);}
+    
+    .tempo{
+      padding-top: 50px;
+      background-color: rgb(255, 255, 255);}
+    
+    a { color: $colorSecundario;
+    }
+    
+    
+    .card-img-top{ height: 250px;}
+    
+    .mediop{padding-top: 100px;}
+    p{ font-weight: bold;}
+    
+    
+    @media screen and (max-width: 576px) {
+      .arriba
+      .abajo {
+          height: auto;
+      }
+      .medio,
+      .mediopromo {
+          height: auto;
+          min-height: 50vh;
+      }
+      .card2 {
+          width: 100%; /* Ajustar el ancho de las tarjetas */
+      }
+      .logo,
+      .log {
+          padding-top: 20px; /* Espaciado superior para el logo */
+      }
+      .barra {
+          padding-top: 30px; /* Espaciado superior para la barra de navegación */
+      }
+    }
